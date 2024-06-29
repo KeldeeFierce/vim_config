@@ -1,6 +1,7 @@
 set number
 set mouse=a
 set termguicolors
+set hlsearch
 filetype on
 filetype plugin on
 filetype indent on
