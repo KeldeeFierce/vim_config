@@ -19,13 +19,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
-nnoremap <c-f> :Files<CR>
-
 " _______NERDTree_________
 "
 source ~/.vim/nerdtree.vim
 
-"
 "_______ALE________________
 "
 source ~/.vim/ale.vim
@@ -39,3 +36,5 @@ source ~/.vim/coc.vim
 
 highlight CocFloating ctermbg=black
 colorscheme catppuccin_macchiato
+
+nnoremap <c-f> :Files<CR>
