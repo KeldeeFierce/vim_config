@@ -38,15 +38,9 @@ function install () {
 }
 
 check_install "curl" "sudo apt install curl"
-# check_install "npm" "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash"
-if which npm; then
-	echo "npm is installed"
-	else
-	echo "Installing nvm"
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-fi
-
-check install "pip" "sudo apt install pip"
+check_install "node" "sudo apt install nodejs"
+check_install "npm" "sudo apt install npm"
+check_install "pip" "sudo apt install pip"
 install "pip install flake8 pylint bandit mypy pycodestyle black isort"
 check_install "shellcheck" "sudo apt install shellcheck"
 
