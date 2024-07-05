@@ -32,6 +32,7 @@ check_install "npm" "sudo apt install npm"
 check_install "pip" "sudo apt install pip"
 check_install "pipx" "sudo apt install pipx"
 install "pipx install flake8 pylint bandit mypy pycodestyle black isort"
+pipx ensurepath
 check_install "shellcheck" "sudo apt install shellcheck"
 
 echo "PlugInstall"
