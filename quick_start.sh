@@ -34,7 +34,7 @@ check_install "pipx" "sudo apt install pipx"
 # use apt install
 install "pipx install flake8 pylint bandit mypy pycodestyle black isort"
 pipx ensurepath
-install "sudo apt intall python3-jedi"
+install "sudo apt install python3-jedi"
 check_install "shellcheck" "sudo apt install shellcheck"
 
 echo "PlugInstall"

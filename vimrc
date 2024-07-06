@@ -17,6 +17,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+" Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " _______NERDTree_________
