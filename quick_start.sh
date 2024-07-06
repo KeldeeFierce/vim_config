@@ -31,8 +31,10 @@ check_install "node" "sudo apt install nodejs"
 check_install "npm" "sudo apt install npm"
 check_install "pip" "sudo apt install pip"
 check_install "pipx" "sudo apt install pipx"
+# use apt install
 install "pipx install flake8 pylint bandit mypy pycodestyle black isort"
 pipx ensurepath
+install "sudo apt intall python3-jedi"
 check_install "shellcheck" "sudo apt install shellcheck"
 
 echo "PlugInstall"
