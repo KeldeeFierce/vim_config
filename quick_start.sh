@@ -39,7 +39,7 @@ install "sudo apt install python3-jedi"
 check_install "shellcheck" "sudo apt install shellcheck"
 
 echo "PlugInstall"
-if vim -c "PlugInstall" +qa; then
+if vim +PlugInstall +qa; then
 	echo "Success"
 else
 	echo "Something went wrong"
@@ -47,7 +47,7 @@ else
 fi
 
 echo "CocInstall python"
-if vim -c ":CocInstall coc-python" +qa; then
+if vim "+CocInstall -sync coc-python" +qa; then
 	echo "Success"
 else
 	echo "Something went wrong"
@@ -55,7 +55,7 @@ else
 fi
 
 echo "CocInstall sh"
-if vim -c ":CocInstall coc-sh" +qa; then
+if vim "+CocInstall -sync coc-sh" +qa; then
 	echo "Success"
 else
 	echo "Something went wrong"
