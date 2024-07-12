@@ -6,6 +6,10 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" For clipboard to work in wayland
+" https://stackoverflow.com/questions/61379318/how-to-copy-from-vim-to-system-clipboard-using-wayland-and-without-compiled-vim
+nnoremap <C-@> :call system("wl-copy", @")<CR>
+
 call plug#begin()
 Plug 'tpope/vim-sensible'
 " Plug 'davidhalter/jedi-vim'
@@ -17,7 +21,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-" Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " _______NERDTree_________
